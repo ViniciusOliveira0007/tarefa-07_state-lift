@@ -1,23 +1,22 @@
-function SeuNome({setNome}) {
+function SeuNome({ setNome }) {
+  return (
+    <div className="input-container">
 
-    
+
+
+        
+      <input
+
+        type="text"
+        onChange={(e) => setNome(e.target.value)}
+        placeholder="Digite seu nome..."
+        className="matrix-input"
+      />
 
 
 
-    return (
-        <div>
-            <p>Digite Seu Nome: </p>
-            <input 
-            type="text" 
-            
-            placeholder="Qual é o seu nome" 
-            
-            onChange={(e) => setNome(e.target.value)}
-            />
-        </div>
-    )
+    </div>
+  );
 }
-
-
 
 export default SeuNome;
